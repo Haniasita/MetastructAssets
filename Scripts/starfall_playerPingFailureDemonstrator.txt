@@ -1,0 +1,32 @@
+--@name PingTest
+--@author Haniasita
+--@shared
+
+if SERVER then
+
+    local pingCount = 0
+    local playerCount = #find.allPlayers()
+    
+    net.receive("PrintPing", function()
+        pingCount = pingCount + 1
+        print(string.format("%s [%d/%d]", net.readString(), pingCount, playerCount))
+    end)
+    
+    hook.add("PlayerSay", "checkForCommand", function(ply, txt)
+        if ply == owner() and txt == ".sf_ping" then
+            pingCount = 0
+            playerCount = #find.allPlayers()
+            net.start("PlayerPing")
+            net.send()
+        end
+    end)
+    
+else
+    
+    net.receive("PlayerPing", function()
+        net.start("PrintPing")
+        net.writeString(player():getName())
+        net.send()    
+    end)
+    
+end
