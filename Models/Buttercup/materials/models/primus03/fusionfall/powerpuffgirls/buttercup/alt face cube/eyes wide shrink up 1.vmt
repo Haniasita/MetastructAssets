@@ -1,0 +1,30 @@
+"VertexLitGeneric"
+{
+//Base
+"$BaseTexture"  "models/Primus03/Fusionfall/PowerPuffGirls/Buttercup/Alt Face Cube/Eyes Wide Shrink Up 1"
+"$alphatest "1"
+
+//Phong
+"$Phong"  "[1]"
+"$PhongBoost"  "[0.05]"
+"$PhongExponent"  "[25]"
+"$PhongFresnelRanges" "[0.3 0.5 1]"
+"$PhongAlbedoTint"           "[1]"
+"$NormalmapAlphaPhongMask"   "[1]"
+
+//Rimlight
+"$Rimlight"      "[1]"
+"$RimMask"      "[1]"
+"$RimlightExponent"          "[20]"
+"$RimlightBoost"             "[0.25]"
+
+//Other
+"$Model"                     "1"
+"$HalfLambert"      "1"
+"$NoDecal"      "0"
+"$AmbientOcclusion"      "1"
+"$NoCull"      "1"
+"$SurfaceProp"      "flesh"
+"$BlendTintByBaseAlpha"      "1"
+"$Color2" "[1 1 1]"//You can change model color here [RGB]
+}
