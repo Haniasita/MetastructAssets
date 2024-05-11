@@ -1,0 +1,29 @@
+VertexLitGeneric
+{
+	$basetexture "models/finalfantasy/aerith_default/eyelashes"
+	$bumpmap "models/finalfantasy/aerith_default/head_n"
+                $color2 "[ 1 1 1]"
+	$surfaceprop Flesh
+
+
+	$normalmapalphaenvmapmask     "models/finalfantasy/aerith_default/head_s"
+	$alphatest 0
+
+
+	$phong 1
+                "$phongfresnelranges"    "[0.05 0.115 0.945]"
+	$phongalbedotint 1
+	$phongexponent 10
+	$phongboost 4
+	$phongalbedoboost 4
+                $phongexponenttexture "models/finalfantasy/aerith_default/head_s"
+
+	$rimlight 0
+	$rimlightexponent 5
+	$rimlightboost 4
+	$rimlightmask 1
+
+
+	$rimmask 1
+
+}
